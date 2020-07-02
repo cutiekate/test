@@ -1,0 +1,225 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 573px;
+  height: 707px;
+  margin-left: 34px;
+  margin-bottom: 34px;
+  box-sizing: border-box;
+  background: #f8fafc;
+  border-radius: 25px;
+  transition: 1.5s;
+
+  &__imgs {
+    display: flex;
+  }
+
+  &__imgs_new {
+    width: 71px;
+    height: 26px;
+    margin-top: 46px;
+    margin-left: 14px;
+    background: linear-gradient(248.16deg, #efbb37 -3.95%, #cf9e1f 109.44%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    position: relative;
+  }
+
+  &__imgs_new-text {
+    position: absolute;
+    left: 29%;
+    top: -33%;
+    font-family: "SF UI Display", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+  }
+
+  &__imgs_product-img {
+    width: 256px;
+    height: 261px;
+    border-radius: 25px;
+    margin-left: 57px;
+    margin-top: 45px;
+  }
+
+  &__imgs_ellipse {
+    width: 46px;
+    height: 46px;
+    margin-left: 82px;
+    margin-top: 35px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    position: relative;
+    transition: 1s;
+  }
+
+  &__imgs_ellipse:hover {
+    background: #f9fafc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  &__imgs_comparison {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description_name {
+    width: 385px;
+    height: 29px;
+    margin-top: 25px;
+    margin-left: 78px;
+    margin-bottom: 0;
+    font-family: "SF UI Display", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2c2c2c;
+  }
+
+  &__description_text {
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 61px;
+    font-family: "SF UI Display", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2c2c2c;
+  }
+
+  &__control_color {
+    display: flex;
+  }
+
+  &__control_color-select {
+    width: 258px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 18px;
+    background: #fff;
+    border-style: none;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 20px;
+  }
+
+  &__control_price {
+    display: block;
+    margin-left: 115px;
+    margin-top: 25px;
+    font-family: "SF UI Display", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+  }
+
+  &__capacity {
+    display: flex;
+    flex-direction: column;
+    margin-left: 51px;
+  }
+
+  &__capacity_text {
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family: "SF UI Display", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__capacity input[type="radio"] {
+    display: none;
+  }
+
+  &__capacity label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+  }
+
+  &__capacity label:before {
+    content: "";
+    display: inline-block;
+    width: 22.54px;
+    height: 22.54px;
+    position: absolute;
+    left: 0;
+    top: -17.77px;
+    background: url(../images/radio.svg) 0 0 no-repeat;
+  }
+
+  &__capacity input[type="radio"]:checked + label:before {
+    width: 22.54px;
+    height: 22.54px;
+    background: url(../images/radio-checked.svg) 0 0 no-repeat;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 11px;
+  }
+
+  &__buttons_counter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 92px;
+    height: 39px;
+    margin-left: 45px;
+    background: #e2e9f0;
+    border-radius: 30px;
+    transition: 1s;
+  }
+
+  &__buttons_counter:hover {
+    background: #d8e3ee;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  &__buttons_counter-count {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__button_buy {
+    margin-left: 33px;
+    width: 302px;
+    height: 39px;
+    background: linear-gradient(221.35deg, #efbb37 -3.95%, #cf9e1f 109.44%);
+    border-radius: 30px;
+    border: none;
+    font-family: "SF UI Display", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 1s;
+  }
+
+  &__button_buy:hover {
+    box-shadow: 0 0 20px #e8cb80;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 4px 45px #c3d4e4;
+}

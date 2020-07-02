@@ -1,7 +1,13 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "card";
 
 body {
-  background: $c-gray;
+  background: white;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
 }
