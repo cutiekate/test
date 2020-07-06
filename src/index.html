@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test task</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <script type="text/javascript" src="scripts/main.js"></script>
   </head>
   <body>
     <section class="main">
@@ -13,11 +14,20 @@
           <div class="card__imgs_new">
             <p class="card__imgs_new-text">NEW</p>
           </div>
-          <img class="card__imgs_product-img"
-          src="./images/product-img1.png" alt="poduct-img">
+          <div class="card__imgs_product-img">
+            <img
+            src="./images/product-img1.png"
+            alt="product-img">
+          </div>
           <div class="card__imgs_ellipse">
-            <img class="card__imgs_comparison"
-            src="images/comparison.svg" alt="comparison">
+            <img
+            class="card__imgs_comparison"
+            src="images/comparison.svg"
+            alt="comparison">
+            <img
+            class="card__imgs_comparison_checked-hidden"
+            src="images/comparison-active.svg"
+            alt="checked">
           </div>
         </div>
         <div class="card__description">
@@ -29,14 +39,19 @@
         </div>
         <div class="card__control">
           <div class="card__control_color">
-            <select class="card__control_color-select">
-              <option value="" selected
-               disabled hidden>цвет
-              </option>
-              <option>Желтый</option>
-              <option>Красный</option>
-              <option>Зеленый</option>
-            </select>
+            <div class="select">
+              <div class="select__header">
+                <span class="select__current">цвет</span>
+                <div class="select__icon">
+                  <img src="./images/select-arrow.svg" alt="arrow">
+                </div>
+              </div>
+              <div class="select__body">
+                <div class="select__item">Желтый</div>
+                <div class="select__item">Красный</div>
+                <div class="select__item">Зеленый</div>
+              </div>
+            </div>
             <p class="card__control_price">200 грн</p>
           </div>
         </div>
@@ -90,15 +105,19 @@
           <div class="card__imgs_new">
             <p class="card__imgs_new-text">NEW</p>
           </div>
-          <img
-          class="card__imgs_product-img"
-          src="./images/product-img2.png"
-          alt="product-img">
+          <div class="card__imgs_product-img">
+            <img
+            src="./images/product-img2.png"
+            alt="product-img">
+          </div>
           <div class="card__imgs_ellipse">
             <img
             class="card__imgs_comparison"
             src="images/comparison.svg"
             alt="comparison">
+            <img class="card__imgs_comparison_checked-hidden"
+            src="images/comparison-active.svg"
+            alt="checked">
           </div>
         </div>
         <div class="card__description">
@@ -111,18 +130,19 @@
         </div>
         <div class="card__control">
           <div class="card__control_color">
-            <select class="card__control_color-select">
-              <option
-              value=""
-              selected
-              disabled
-              hidden>
-              цвет
-              </option>
-              <option>Желтый</option>
-              <option>Красный</option>
-              <option>Зеленый</option>
-            </select>
+            <div class="select">
+              <div class="select__header">
+                <span class="select__current">цвет</span>
+                <div class="select__icon">
+                  <img src="./images/select-arrow.svg" alt="arrow">
+                </div>
+              </div>
+              <div class="select__body">
+                <div class="select__item">Желтый</div>
+                <div class="select__item">Красный</div>
+                <div class="select__item">Зеленый</div>
+              </div>
+            </div>
             <p class="card__control_price">200 грн</p>
           </div>
         </div>
@@ -176,15 +196,20 @@
           <div class="card__imgs_new">
             <p class="card__imgs_new-text">NEW</p>
           </div>
-          <img
-          class="card__imgs_product-img"
-          src="./images/product-img3.png"
-          alt="product-img">
+          <div class="card__imgs_product-img">
+            <img
+            src="./images/product-img3.png"
+            alt="product-img">
+          </div>
           <div class="card__imgs_ellipse">
             <img
             class="card__imgs_comparison"
             src="images/comparison.svg"
             alt="comparison">
+            <img
+            class="card__imgs_comparison_checked-hidden"
+            src="images/comparison-active.svg"
+            alt="checked">
           </div>
         </div>
         <div class="card__description">
@@ -196,18 +221,19 @@
         </div>
         <div class="card__control">
           <div class="card__control_color">
-            <select class="card__control_color-select">
-              <option
-              value=""
-              selected
-              disabled
-              hidden>
-              цвет
-              </option>
-              <option>Желтый</option>
-              <option>Красный</option>
-              <option>Зеленый</option>
-            </select>
+            <div class="select">
+              <div class="select__header">
+                <span class="select__current">цвет</span>
+                <div class="select__icon">
+                  <img src="./images/select-arrow.svg" alt="arrow">
+                </div>
+              </div>
+              <div class="select__body">
+                <div class="select__item">Желтый</div>
+                <div class="select__item">Красный</div>
+                <div class="select__item">Зеленый</div>
+              </div>
+            </div>
             <p class="card__control_price">200 грн</p>
           </div>
         </div>
@@ -257,6 +283,5 @@
         </div>
       </div>
     </section>
-    <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

@@ -36,11 +36,21 @@
   }
 
   &__imgs_product-img {
-    width: 256px;
-    height: 261px;
-    border-radius: 25px;
     margin-left: 57px;
     margin-top: 45px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  &__imgs_product-img img {
+    width: 256px;
+    height: 261px;
+    transition: 1s;
+    display: block;
+  }
+
+  &__imgs_product-img img:hover {
+    transform: scale(2.8) translate(-10%, 5%);
   }
 
   &__imgs_ellipse {
@@ -65,6 +75,34 @@
     position: absolute;
     left: 30%;
     top: 30%;
+  }
+
+  &__imgs_comparison-onclick {
+    position: absolute;
+    left: 2%;
+    top: 0;
+    width: 43px;
+    height: 43px;
+    color: #003466;
+    opacity: 0.02;
+  }
+
+  &__imgs_comparison_checked-hidden {
+    width: 13px;
+    height: 9px;
+    position: absolute;
+    left: 35.75%;
+    top: 42.21%;
+    display: none;
+  }
+
+  &__imgs_comparison_checked {
+    width: 13px;
+    height: 9px;
+    position: absolute;
+    left: 35.75%;
+    top: 42.21%;
+    display: block;
   }
 
   &__description {
@@ -115,7 +153,8 @@
   &__control_price {
     display: block;
     margin-left: 115px;
-    margin-top: 25px;
+    margin-top: 11px;
+    margin-bottom: 35px;
     font-family: "SF UI Display", sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -193,6 +232,13 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
 
+  &__buttons_counter-minus,
+  &__buttons_counter-plus {
+    cursor: pointer;
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
+
   &__buttons_counter-count {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -213,6 +259,14 @@
     text-transform: uppercase;
     color: #fff;
     transition: 1s;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__button_buy-active {
+    background: linear-gradient(221.35deg,
+    rgba(255, 215, 115, 0.99) -3.95%, #e2b645 109.44%);
+    color: #fff8e4;
   }
 
   &__button_buy:hover {
