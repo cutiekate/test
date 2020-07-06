@@ -65,3 +65,9 @@
 .select.is-active .select__body {
   display: block;
 }
+
+@media (max-width: 1024px) {
+  .select {
+    margin-left: 23px;
+  }
+}

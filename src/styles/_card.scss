@@ -277,3 +277,89 @@
 .card:hover {
   box-shadow: 0 4px 45px #c3d4e4;
 }
+@media (max-width: 1024px) {
+  .card {
+    width: 450px;
+    margin-left: 30px;
+
+    &__imgs_product-img {
+      margin-left: 10px;
+      margin-top: 34px;
+    }
+
+    &__imgs_new {
+      margin-top: 23px;
+      margin-left: 6px;
+    }
+
+    &__imgs_ellipse {
+      margin-left: 40px;
+      margin-top: 18px;
+    }
+
+    &__description_name {
+      width: 385;
+      margin-left: 25px;
+    }
+
+    &__description_text {
+      margin-left: 25px;
+      font-size: 14px;
+    }
+
+    &__control_price {
+      margin-left: 35px;
+    }
+
+    &__capacity {
+      margin-left: 25px;
+    }
+
+    &__buttons_counter {
+      margin-left: 25px;
+    }
+
+    &__button_buy {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    margin-left: 8px;
+    width: 340px;
+    height: 640px;
+
+    &__imgs_product-img img {
+      width: 180px;
+      height: 180px;
+    }
+
+    &__imgs_ellipse {
+      margin-left: 12px;
+    }
+
+    &__description_name {
+      width: 307px;
+    }
+
+    &__description_text {
+      font-size: 12px;
+      margin-right: 24px;
+    }
+
+    &__control_color {
+      flex-wrap: wrap;
+    }
+
+    &__control_price {
+      margin-left: 240px;
+      margin-bottom: 10px;
+    }
+
+    &__button_buy {
+      width: 190px;
+    }
+  }
+}
